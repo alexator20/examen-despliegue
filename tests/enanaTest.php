@@ -9,7 +9,8 @@ class EnanaTest extends TestCase {
         #Se probará la creación de enanas vivas, muertas y en limbo y se comprobará tanto la vida como el estado
 
         $calc = new Enana("Lucia",100);
-        $this->assertEquals("Lucia",100,"viva");
+        $this->assertEquals("lucia",$calc->getNombre());
+        //$this->assertEquals("viva", $calc->__construct("Lucia",100));
     }
     public function testHeridaLeveVive() {
         #Se probará el efecto de una herida leve a una Enana con puntos de vida suficientes para sobrevivir al ataque
