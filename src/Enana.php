@@ -28,6 +28,7 @@ class Enana
         $this->puntosVida-=10;
         if ($this->puntosVida>0) {
             $this->situacion="viva";
+            $this->setPuntosVida($this->puntosVida);
         }elseif ($this->puntosVida<0) {
             $this->situacion="muerta";
         }else {
