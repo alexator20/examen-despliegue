@@ -40,7 +40,7 @@ class EnanaTest extends TestCase {
         #Se tendrá que probar que la vida es 0 y además que su situación es limbo
         
         $calc = new Enana("Lucia",100);
-        $calc->heridaLeve();
+        $calc->heridaGrave();
         $this->assertEquals(0, $calc->getPuntosVida());
         $this->assertEquals("limbo", $calc->getSituacion());
     }
