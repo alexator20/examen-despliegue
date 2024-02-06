@@ -37,6 +37,7 @@ class Enana
 
     public function heridaGrave(){
         #Se le quita toda la vida que posea hasta tener 0 puntos de vida y cambiarle la situacion a limbo
+        $this->puntosVida=0;
         $this->situacion="limbo";
     }
 
