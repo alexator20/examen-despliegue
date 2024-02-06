@@ -60,15 +60,19 @@ class EnanaTest extends TestCase {
         #Se tendrá que probar que la vida y situación no ha cambiado
 
         $calc = new Enana("Lucia",0);
-        $calc->pocimaExtra();
-        $this->assertEquals(50, $calc->getPuntosVida());
-        $this->assertEquals("viva", $calc->getSituacion());
+        $calc->pocima();
+        $this->assertEquals(0, $calc->getPuntosVida());
+        $this->assertEquals("limbo", $calc->getSituacion());
     }
 
     public function testPocimaExtraLimbo() {
         #Se probará el efecto de administrar una pócima Extra a una Enana en el limbo.
         #Se tendrá que probar que la vida es 50 y la situación ha cambiado a viva.
 
+        $calc = new Enana("Lucia",0);
+        $calc->pocimaExtra();
+        $this->assertEquals(50, $calc->getPuntosVida());
+        $this->assertEquals("viva", $calc->getSituacion());
     }
 }
 ?>
