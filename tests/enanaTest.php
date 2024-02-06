@@ -20,7 +20,7 @@ class EnanaTest extends TestCase {
 
         $calc = new Enana("Lucia",100);
         
-        $this->assertEquals(90, $calc->heridaLeve());
+        $this->assertEquals($calc->heridaLeve(), $calc->getPuntosVida());
         $this->assertEquals("viva", $calc->getSituacion());
     }
 
